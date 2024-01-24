@@ -11,7 +11,7 @@ import {
 import Button from "../components/Button";
 import { useState } from "react";
 
-const PageHeader = () => {
+const Header = () => {
   const [showFullWidthSearch, setShowFullWidthSearch] = useState(false);
 
   return (
@@ -30,7 +30,7 @@ const PageHeader = () => {
         </a>
       </div>
       <form
-        className={`  gap-4 flex-grow justify-center ${
+        className={`gap-4 flex-grow justify-center ${
           showFullWidthSearch ? "flex" : "hidden md:flex"
         }`}
       >
@@ -89,4 +89,4 @@ const PageHeader = () => {
   );
 };
 
-export default PageHeader;
+export default Header;
