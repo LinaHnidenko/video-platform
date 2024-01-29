@@ -5,4 +5,4 @@ Build with:
 - Tailwind CSS
 - Typescript
     
-👉 Live Demo: [Live](https://lina-play-pulse.netlify.app/)
+👉 Live Demo: [Live Demo](https://lina-play-pulse.netlify.app/)
