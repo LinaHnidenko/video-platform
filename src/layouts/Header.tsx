@@ -1,34 +1,14 @@
-import logo from "../assets/logo.svg";
-import {
-  ArrowLeft,
-  Bell,
-  Menu,
-  Mic,
-  MonitorUp,
-  Search,
-  User,
-} from "lucide-react";
+import { ArrowLeft, Bell, Mic, MonitorUp, Search, User } from "lucide-react";
 import Button from "../components/Button";
 import { useState } from "react";
+import HeaderFirstSection from "../components/HeaderFirstSection";
 
 const Header = () => {
   const [showFullWidthSearch, setShowFullWidthSearch] = useState(false);
 
   return (
     <div className="flex gap-10 lg:gap-20 justify-between pt-2 mb-6 mx-4">
-      <div
-        className={` gap-4 items-center flex-shrink-0 ${
-          showFullWidthSearch ? "hidden" : "flex"
-        }`}
-      >
-        <Button variant="ghost" size="icon" className="">
-          <Menu />
-        </Button>
-        <a href="/" className="flex justify-center items-center gap-1">
-          <img src={logo} alt="" className="h-6" />
-          <span>PlayPulse</span>
-        </a>
-      </div>
+      <HeaderFirstSection hidden={showFullWidthSearch} />
       <form
         className={`gap-4 flex-grow justify-center ${
           showFullWidthSearch ? "flex" : "hidden md:flex"

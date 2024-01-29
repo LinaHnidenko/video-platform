@@ -36,7 +36,8 @@ const VideoItem = ({
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    if (videoRef.current === 0) return;
+    if (videoRef.current === null) return;
+
     if (isVideoPlaying) {
       videoRef.current.currentTime = 0;
       videoRef.current.play();
@@ -44,7 +45,6 @@ const VideoItem = ({
       videoRef.current.pause();
     }
   }, [isVideoPlaying]);
-
   return (
     <div
       className="flex flex-col gap-2"
