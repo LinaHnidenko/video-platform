@@ -1,4 +1,5 @@
 PlayPulse is a clone of YouTube website. 🖥️
+
 Build with:
 - React
 - Tailwind CSS
